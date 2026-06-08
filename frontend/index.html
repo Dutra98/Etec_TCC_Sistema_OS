@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema OS</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+            <div class="container">
+
+                <!-- SIDEBAR -->
+                <aside class="sidebar">
+
+                    <div class="logo">
+
+                <div class="logo-icon">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+
+                <div class="logo-text">
+                    <h2>SOS</h2>
+                    <span>Assistência Técnica</span>
+                </div>
+
+            </div>
+
+            <nav class="menu">
+
+                <a href="#" class="active">
+                    <i class="fa-solid fa-table-columns"></i>
+                    Dashboard
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-file-lines"></i>
+                    Ordens de Serviço
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-users"></i>
+                    Técnicos
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-computer"></i>
+                    Equipamentos
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-chart-column"></i>
+                    Relatórios
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    Configurações
+                </a>
+
+            </nav>
+
+            <div class="logout">
+                <a href="#">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Sair
+                </a>
+            </div>
+
+        </aside>
+
+        <!-- CONTEÚDO -->
+        <main class="content">
+
+            <!-- TOPBAR -->
+            <header class="topbar">
+
+                <div class="topbar-left">
+                    <i class="fa-solid fa-bars"></i>
+                    <h1>Sistema de Ordens de Serviço</h1>
+                </div>
+
+                <div class="user">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span>Administrador</span>
+                </div>
+
+            </header>
+
+            <section class="page-content">
+
+                <div class="page-header">
+
+                    <div class="table-card">
+
+    <div class="table-actions">
+        <input type="text" id="buscar-os" placeholder="Buscar OS...">
+    </div>
+
+    <table class="os-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Descrição do Problema</th>
+                <th>Equipamento</th>
+                <th>Técnico</th>
+                <th>Status</th>
+                <th>Data de Abertura</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+
+        <tbody id="tabela-os">
+            <!-- Dados carregados pelo JavaScript -->
+        </tbody>
+    </table>
+
+</div>
+
+                    <div>
+                        <h2>Ordens de Serviço</h2>
+                        <p>Lista de ordens de serviço cadastradas</p>
+                    </div>
+
+                    <a href="pages/nova-os.html" class="btn-primary">
+                        <i class="fa-solid fa-plus"></i>
+                        Nova OS
+                    </a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

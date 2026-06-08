@@ -1,1 +1,0 @@
-# Etec_TCC_Sistema_OS

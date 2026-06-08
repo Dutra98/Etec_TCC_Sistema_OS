@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema OS</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+            <div class="container">
+
+                <!-- SIDEBAR -->
+                <aside class="sidebar">
+
+                    <div class="logo">
+
+                <div class="logo-icon">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+
+                <div class="logo-text">
+                    <h2>SOS</h2>
+                    <span>Assistência Técnica</span>
+                </div>
+
+            </div>
+
+            <nav class="menu">
+
+                <a href="#" class="active">
+                    <i class="fa-solid fa-table-columns"></i>
+                    Dashboard
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-file-lines"></i>
+                    Ordens de Serviço
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-users"></i>
+                    Técnicos
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-computer"></i>
+                    Equipamentos
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-chart-column"></i>
+                    Relatórios
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    Configurações
+                </a>
+
+            </nav>
+
+            <div class="logout">
+                <a href="#">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Sair
+                </a>
+            </div>
+
+        </aside>
+
+        <!-- CONTEÚDO -->
+        <main class="content">
+
+            <!-- TOPBAR -->
+            <header class="topbar">
+
+                <div class="topbar-left">
+                    <i class="fa-solid fa-bars"></i>
+                    <h1>Sistema de Ordens de Serviço</h1>
+                </div>
+
+                <div class="user">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span>Administrador</span>
+                </div>
+
+            </header>
+
+            <section class="page-content">
+
+    <div class="page-header">
+
+        <div>
+            <h2>Nova Ordem de Serviço</h2>
+            <p>Preencha os dados para cadastrar uma nova OS</p>
+        </div>
+
+    </div>
+
+    <div class="form-container">
+
+    <form class="os-form" id="form-os">
+
+    <div class="form-group">
+        <label>Descrição do Problema *</label>
+        <textarea name="descricao" placeholder="Descreva o problema apresentado..." required></textarea>
+    </div>
+
+    <div class="form-row">
+
+        <div class="form-group">
+            <label>Equipamento *</label>
+
+            <select name="equipamento" required>
+                <option value="">Selecione o equipamento</option>
+                <option>Impressora HP LaserJet 1020</option>
+                <option>PC Dell Inspiron 15</option>
+                <option>Monitor LG 24MK430</option>
+                <option>Teclado Logitech K120</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Técnico Responsável *</label>
+
+            <select name="tecnico" required>
+                <option value="">Selecione o técnico</option>
+                <option>João Silva</option>
+                <option>Maria Souza</option>
+                <option>Carlos Lima</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="form-row">
+
+        <div class="form-group">
+            <label>Data de Abertura *</label>
+            <input type="date" name="data_abertura" required>
+        </div>
+
+        <div class="form-group">
+            <label>Prioridade</label>
+
+            <select name="prioridade">
+                <option value="">Selecione a prioridade</option>
+                <option>Baixa</option>
+                <option>Média</option>
+                <option>Alta</option>
+                <option>Urgente</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="form-group">
+        <label>Status *</label>
+
+        <select name="status" required>
+            <option>Aberto</option>
+            <option>Em andamento</option>
+            <option>Aguardando peças</option>
+            <option>Finalizado</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Observações</label>
+        <textarea name="observacoes" placeholder="Observações adicionais (opcional)..."></textarea>
+    </div>
+
+    <div class="form-buttons">
+
+        <button type="submit" class="btn-primary">
+            <i class="fa-solid fa-floppy-disk"></i>
+            Salvar
+        </button>
+
+        <a href="../index.html" class="btn-secondary">
+            Cancelar
+        </a>
+
+    </div>
+
+        </form>
+
+            <div class="form-group">
+
+                <label>Descrição do Problema *</label>
+
+                <textarea placeholder="Descreva o problema apresentado..."></textarea>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Equipamento *</label>
+
+                    <select>
+                        <option>Selecione o equipamento</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Técnico Responsável *</label>
+
+                    <select>
+                        <option>Selecione o técnico</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Data de Abertura *</label>
+
+                    <input type="date">
+                </div>
+
+                <div class="form-group">
+                    <label>Prioridade</label>
+
+                    <select>
+                        <option>Selecione a prioridade</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Status *</label>
+
+                <select>
+                    <option>Aberto</option>
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Observações</label>
+
+                <textarea placeholder="Observações adicionais (opcional)..."></textarea>
+
+            </div>
+
+            <div class="form-buttons">
+
+                <button type="submit" class="btn-primary">
+                    <i class="fa-solid fa-floppy-disk"></i>
+                    Salvar
+                </button>
+
+                <a href="../index.html" class="btn-secondary">
+                    Cancelar
+                </a>
+
+            </div>
+
+        </form>
+
+    </div>
+
+        </section>
+
+        </main>
+
+    </div>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+Requisitos do Sistema de Ordens de Serviço
+
+Requisitos funcionais:
+1. O sistema deve permitir visualizar Ordens de Serviço cadastradas.
+2. O sistema deve permitir cadastrar uma nova Ordem de Serviço.
+3. O sistema deve permitir informar descrição do problema, equipamento, técnico, data de abertura, prioridade, status e observações.
+4. O sistema deve simular o armazenamento das Ordens de Serviço usando localStorage.
+5. O sistema deve apresentar uma estrutura planejada de banco de dados relacional.
+
+Requisitos não funcionais:
+1. O sistema deve possuir interface simples e intuitiva.
+2. O sistema deve ser executado em navegador web.
+3. O sistema deve ter os arquivos organizados em frontend, backend e documentação.
+4. O sistema deve permitir futura integração com backend em Flask e banco de dados SQLite.
